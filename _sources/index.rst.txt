@@ -12,6 +12,7 @@
    Package Overview <README>
    Whitepaper <whitepaper.rst>
    Reading List <reading.rst>
+   Benchmarks <benchmarks.rst>
 
 .. toctree::
    :maxdepth: 1
@@ -27,10 +28,10 @@
    :maxdepth: 1
    :caption: API Reference
 
-   Solvers   _salad.solver_   <api/salad.solver>
-   Datasets  ``salad.datasets`` <api/salad.datasets>
-   Models    ``salad.models``   <api/salad.models>
-   Layers    ``salad.layers``   <api/salad.layers>
-   Utilities ``salad.utils``    <api/salad.utils>
+   Solvers   (salad.solver)   <api/salad.solver>
+   Datasets  (salad.datasets) <api/salad.datasets>
+   Models    (salad.models)   <api/salad.models>
+   Layers    (salad.layers)   <api/salad.layers>
+   Utilities (salad.utils)    <api/salad.utils>
 
 .. Optimizers ``salad.optim`` <api/salad.optim>
