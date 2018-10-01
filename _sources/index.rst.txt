@@ -16,6 +16,16 @@
 
 .. toctree::
    :maxdepth: 1
+   :caption: Tutorials
+
+   Solvers   (salad.solver)   <demos/salad.solver>
+   Datasets  (salad.datasets) <demos/salad.datasets>
+   Models    (salad.models)   <demos/salad.models>
+   Layers    (salad.layers)   <demos/salad.layers>
+   Utilities (salad.utils)    <demos/salad.utils>
+
+.. toctree::
+   :maxdepth: 1
    :caption: Scripts and Paper Implementations
 
    Domain Adversarial Training <dummy.rst>

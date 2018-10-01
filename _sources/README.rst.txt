@@ -1,9 +1,9 @@
-🥗 salad 🥗
-===========
+🥗 salad 
+========
 
 **S**\ emi-supervised **A**\ daptive **L**\ earning **A**\ cross **D**\ omains
 
-.. figure:: img/domainshift.png
+.. figure:: docs/img/domainshift.png
    :alt: 
 
 ``salad`` is a library to easily setup experiments using the current
@@ -13,7 +13,7 @@ between algorithms and transfer them to real-world use cases. The
 toolbox is under active development and will extended when new
 approaches are published.
 
-Currently implements the following techniques (in ``salad.solver.da``)
+Currently implements the following techniques (in ``salad.solver``)
 
 -  VADA (``VADASolver``),
    `arxiv:1802.08735 <https://arxiv.org/abs/1802.08735>`__
@@ -69,13 +69,13 @@ For the latest development version, install via
 
     pip install git+https://github.com/bethgelab/domainadaptation
 
+
 📚 Using this library
 ---------------------
 
 Along with the implementation of domain adaptation routines, this
 library comprises code to easily set up deep learning experiments in
-general. Experiments are specified using the classes defined in
-``solver.py``.
+general. 
 
 This section will be extended upon pre-release.
 
