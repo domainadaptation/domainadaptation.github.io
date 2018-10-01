@@ -83,8 +83,10 @@
             
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="README.html">Package Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="README.html#benchmarking-results">📊 Benchmarking Results</a></li>
 <li class="toctree-l2"><a class="reference internal" href="README.html#installation">💻 Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="README.html#using-this-library">📚 Using this library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="README.html#quick-start">Quick Start</a></li>
 <li class="toctree-l3"><a class="reference internal" href="README.html#reasons-for-using-solver-abstractions">Reasons for using solver abstractions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="README.html#quickstart-mnist-experiment">Quickstart: MNIST Experiment</a></li>
 </ul>
@@ -278,7 +280,7 @@
 <li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#submodules">Submodules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#module-salad.datasets.visda.detection">salad.datasets.visda.detection module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#module-salad.datasets.visda.openset">salad.datasets.visda.openset module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#salad-datasets-visda-utils-module">salad.datasets.visda.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#module-salad.datasets.visda.utils">salad.datasets.visda.utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#module-salad.datasets.visda.visda">salad.datasets.visda.visda module</a></li>
 </ul>
 </li>
@@ -294,7 +296,7 @@
 <li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#module-salad.models.digits.adv">salad.models.digits.adv module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#module-salad.models.digits.assoc">salad.models.digits.assoc module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#module-salad.models.digits.corr">salad.models.digits.corr module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#salad-models-digits-dirtt-module">salad.models.digits.dirtt module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#module-salad.models.digits.dirtt">salad.models.digits.dirtt module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#module-salad.models.digits.ensemble">salad.models.digits.ensemble module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#salad-models-digits-fan-module">salad.models.digits.fan module</a></li>
 </ul>
@@ -333,7 +335,7 @@
 <li class="toctree-l2"><a class="reference internal" href="api/salad.utils.html#module-salad.utils.base">salad.utils.base module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/salad.utils.html#module-salad.utils.config">salad.utils.config module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/salad.utils.html#module-salad.utils.evaluate">salad.utils.evaluate module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/salad.utils.html#salad-utils-finetune-module">salad.utils.finetune module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/salad.utils.html#module-salad.utils.finetune">salad.utils.finetune module</a></li>
 </ul>
 </li>
 </ul>
@@ -475,7 +477,11 @@
       <li><a href="api/salad.datasets.transforms.html#salad.datasets.transforms.ensembling.ImageAugmentation.augment_pair">augment_pair() (salad.datasets.transforms.ensembling.ImageAugmentation method)</a>
 </li>
       <li><a href="api/salad.datasets.transforms.html#salad.datasets.transforms.ensembling.Augmentation">Augmentation (class in salad.datasets.transforms.ensembling)</a>
+
+      <ul>
+        <li><a href="api/salad.datasets.visda.html#salad.datasets.visda.utils.Augmentation">(class in salad.datasets.visda.utils)</a>
 </li>
+      </ul></li>
       <li><a href="api/salad.datasets.da.html#salad.datasets.da.base.AugmentationDataset">AugmentationDataset (class in salad.datasets.da.base)</a>
 </li>
       <li><a href="api/salad.datasets.da.html#salad.datasets.da.digits.AugmentationLoader">AugmentationLoader (class in salad.datasets.da.digits)</a>
@@ -556,14 +562,22 @@
       </ul></li>
       <li><a href="api/salad.datasets.da.html#salad.datasets.da.base.concat_collate">concat_collate() (in module salad.datasets.da.base)</a>
 </li>
-      <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.SVHN_MNIST_Model.conditional_params">conditional_params() (salad.models.digits.ensemble.SVHN_MNIST_Model method)</a>
+      <li><a href="api/salad.models.digits.html#salad.models.digits.dirtt.SVHN_MNIST_Model.conditional_params">conditional_params() (salad.models.digits.dirtt.SVHN_MNIST_Model method)</a>
+
+      <ul>
+        <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.SVHN_MNIST_Model.conditional_params">(salad.models.digits.ensemble.SVHN_MNIST_Model method)</a>
 </li>
+      </ul></li>
       <li><a href="api/salad.models.html#salad.models.base.ConditionalAdaptive">ConditionalAdaptive (class in salad.models.base)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.ConditionalBatchNorm">ConditionalBatchNorm (class in salad.models.digits.ensemble)</a>
+      <li><a href="api/salad.models.digits.html#salad.models.digits.dirtt.ConditionalBatchNorm">ConditionalBatchNorm (class in salad.models.digits.dirtt)</a>
+
+      <ul>
+        <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.ConditionalBatchNorm">(class in salad.models.digits.ensemble)</a>
 </li>
+      </ul></li>
       <li><a href="api/salad.layers.html#salad.layers.vat.ConditionalEntropy">ConditionalEntropy (class in salad.layers.vat)</a>
 </li>
       <li><a href="api/salad.models.html#salad.models.gan.ConditionalGAN">ConditionalGAN (class in salad.models.gan)</a>
@@ -705,7 +719,11 @@
       <li><a href="api/salad.solver.da.html#salad.solver.da.crossgrad.features">features() (in module salad.solver.da.crossgrad)</a>
 </li>
       <li><a href="api/salad.solver.html#salad.solver.classification.FinetuneSolver">FinetuneSolver (class in salad.solver.classification)</a>
+
+      <ul>
+        <li><a href="api/salad.utils.html#salad.utils.finetune.FinetuneSolver">(class in salad.utils.finetune)</a>
 </li>
+      </ul></li>
       <li><a href="api/salad.solver.html#salad.solver.base.EventBasedSolver.finish_batch">finish_batch() (salad.solver.base.EventBasedSolver method)</a>
 </li>
       <li><a href="api/salad.solver.html#salad.solver.base.EventBasedSolver.finish_epoch">finish_epoch() (salad.solver.base.EventBasedSolver method)</a>
@@ -785,6 +803,10 @@
 </li>
         <li><a href="api/salad.models.digits.html#salad.models.digits.corr.SVHNmodel.forward">(salad.models.digits.corr.SVHNmodel method)</a>
 </li>
+        <li><a href="api/salad.models.digits.html#salad.models.digits.dirtt.ConditionalBatchNorm.forward">(salad.models.digits.dirtt.ConditionalBatchNorm method)</a>
+</li>
+        <li><a href="api/salad.models.digits.html#salad.models.digits.dirtt.SVHN_MNIST_Model.forward">(salad.models.digits.dirtt.SVHN_MNIST_Model method)</a>
+</li>
         <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.ConditionalBatchNorm.forward">(salad.models.digits.ensemble.ConditionalBatchNorm method)</a>
 </li>
         <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.SVHN_MNIST_Model.forward">(salad.models.digits.ensemble.SVHN_MNIST_Model method)</a>
@@ -852,13 +874,19 @@
         <li><a href="api/salad.html#salad.structural.get_affine">(in module salad.structural)</a>
 </li>
       </ul></li>
+      <li><a href="api/salad.datasets.visda.html#salad.datasets.visda.utils.get_balanced_loader">get_balanced_loader() (in module salad.datasets.visda.utils)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/salad.datasets.visda.html#salad.datasets.visda.utils.get_class_counts">get_class_counts() (in module salad.datasets.visda.utils)</a>
+</li>
       <li><a href="api/salad.datasets.digits.html#salad.datasets.digits.openset.get_data">get_data() (in module salad.datasets.digits.openset)</a>
 </li>
       <li><a href="api/salad.solver.da.html#salad.solver.da.crossgrad.get_dataset">get_dataset() (in module salad.solver.da.crossgrad)</a>
 </li>
       <li><a href="api/salad.models.vision.html#salad.models.vision.unet.UNet.get_n_params">get_n_params() (salad.models.vision.unet.UNet method)</a>
+</li>
+      <li><a href="api/salad.datasets.visda.html#salad.datasets.visda.utils.get_unbalanced_loader">get_unbalanced_loader() (in module salad.datasets.visda.utils)</a>
 </li>
       <li><a href="api/salad.layers.html#salad.layers.mat.getdata">getdata() (in module salad.layers.mat)</a>
 </li>
@@ -954,15 +982,17 @@
       </ul></li>
       <li><a href="api/salad.datasets.da.html#salad.datasets.da.base.load_dataset2">load_dataset2() (in module salad.datasets.da.base)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/salad.datasets.transforms.html#salad.datasets.transforms.noisy.load_noisy_mnist">load_noisy_mnist() (in module salad.datasets.transforms.noisy)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/salad.utils.html#salad.utils.base.load_or_create">load_or_create() (in module salad.utils.base)</a>
 </li>
       <li><a href="api/salad.layers.html#salad.layers.coral.LogCoralLoss">LogCoralLoss (class in salad.layers.coral)</a>
 </li>
       <li><a href="api/salad.layers.html#salad.layers.mat.logeuclid">logeuclid() (in module salad.layers.mat)</a>
+</li>
+      <li><a href="api/salad.utils.html#salad.utils.finetune.Loss">Loss (class in salad.utils.finetune)</a>
 </li>
       <li><a href="api/salad.datasets.da.html#salad.datasets.da.digits.LowToHighGaussian">LowToHighGaussian (class in salad.datasets.da.digits)</a>
 </li>
@@ -995,6 +1025,8 @@
       <li><a href="api/salad.datasets.da.html#salad.datasets.da.base.MultiDomainLoader">MultiDomainLoader (class in salad.datasets.da.base)</a>
 </li>
       <li><a href="api/salad.solver.da.html#salad.solver.da.crossgrad.MultiDomainModule">MultiDomainModule (class in salad.solver.da.crossgrad)</a>
+</li>
+      <li><a href="api/salad.datasets.visda.html#salad.datasets.visda.utils.MultiTransform">MultiTransform (class in salad.datasets.visda.utils)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -1062,20 +1094,24 @@
 </li>
       <li><a href="api/salad.utils.html#salad.utils.base.panelize">panelize() (in module salad.utils.base)</a>
 </li>
-      <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.ConditionalBatchNorm.parameters">parameters() (salad.models.digits.ensemble.ConditionalBatchNorm method)</a>
+      <li><a href="api/salad.models.digits.html#salad.models.digits.dirtt.ConditionalBatchNorm.parameters">parameters() (salad.models.digits.dirtt.ConditionalBatchNorm method)</a>
 
       <ul>
+        <li><a href="api/salad.models.digits.html#salad.models.digits.dirtt.SVHN_MNIST_Model.parameters">(salad.models.digits.dirtt.SVHN_MNIST_Model method)</a>
+</li>
+        <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.ConditionalBatchNorm.parameters">(salad.models.digits.ensemble.ConditionalBatchNorm method)</a>
+</li>
         <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.SVHN_MNIST_Model.parameters">(salad.models.digits.ensemble.SVHN_MNIST_Model method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/salad.solver.da.html#salad.solver.da.crossgrad.Model.parameters_classifier">parameters_classifier() (salad.solver.da.crossgrad.Model method)</a>
 
       <ul>
         <li><a href="api/salad.solver.da.html#salad.solver.da.crossgrad.MultiDomainModule.parameters_classifier">(salad.solver.da.crossgrad.MultiDomainModule method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/salad.solver.da.html#salad.solver.da.crossgrad.Model.parameters_domain">parameters_domain() (salad.solver.da.crossgrad.Model method)</a>
 
       <ul>
@@ -1138,6 +1174,8 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/salad.html#module-salad">salad (module)</a>
 </li>
+      <li><a href="api/salad.datasets.html#module-salad.datasets">salad.datasets (module)</a>
+</li>
       <li><a href="api/salad.datasets.da.html#module-salad.datasets.da">salad.datasets.da (module)</a>
 </li>
       <li><a href="api/salad.datasets.da.html#module-salad.datasets.da.base">salad.datasets.da.base (module)</a>
@@ -1174,6 +1212,8 @@
 </li>
       <li><a href="api/salad.datasets.visda.html#module-salad.datasets.visda.openset">salad.datasets.visda.openset (module)</a>
 </li>
+      <li><a href="api/salad.datasets.visda.html#module-salad.datasets.visda.utils">salad.datasets.visda.utils (module)</a>
+</li>
       <li><a href="api/salad.datasets.visda.html#module-salad.datasets.visda.visda">salad.datasets.visda.visda (module)</a>
 </li>
       <li><a href="api/salad.layers.html#module-salad.layers">salad.layers (module)</a>
@@ -1206,6 +1246,8 @@
 </li>
       <li><a href="api/salad.models.digits.html#module-salad.models.digits.corr">salad.models.digits.corr (module)</a>
 </li>
+      <li><a href="api/salad.models.digits.html#module-salad.models.digits.dirtt">salad.models.digits.dirtt (module)</a>
+</li>
       <li><a href="api/salad.models.digits.html#module-salad.models.digits.ensemble">salad.models.digits.ensemble (module)</a>
 </li>
       <li><a href="api/salad.models.html#module-salad.models.gan">salad.models.gan (module)</a>
@@ -1228,10 +1270,10 @@
 </li>
       <li><a href="api/salad.solver.da.html#module-salad.solver.da">salad.solver.da (module)</a>
 </li>
-      <li><a href="api/salad.solver.da.html#module-salad.solver.da.advdrop">salad.solver.da.advdrop (module)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/salad.solver.da.html#module-salad.solver.da.advdrop">salad.solver.da.advdrop (module)</a>
+</li>
       <li><a href="api/salad.solver.da.html#module-salad.solver.da.advdrop_refactor">salad.solver.da.advdrop_refactor (module)</a>
 </li>
       <li><a href="api/salad.solver.da.html#module-salad.solver.da.association">salad.solver.da.association (module)</a>
@@ -1267,6 +1309,8 @@
       <li><a href="api/salad.utils.html#module-salad.utils.config">salad.utils.config (module)</a>
 </li>
       <li><a href="api/salad.utils.html#module-salad.utils.evaluate">salad.utils.evaluate (module)</a>
+</li>
+      <li><a href="api/salad.utils.html#module-salad.utils.finetune">salad.utils.finetune (module)</a>
 </li>
       <li><a href="api/salad.datasets.transforms.html#salad.datasets.transforms.noise.SaltAndPepper">SaltAndPepper (class in salad.datasets.transforms.noise)</a>
 </li>
@@ -1320,8 +1364,12 @@
 </li>
       <li><a href="api/salad.solver.html#salad.solver.base.StructuredInit">StructuredInit (class in salad.solver.base)</a>
 </li>
-      <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.SVHN_MNIST_Model">SVHN_MNIST_Model (class in salad.models.digits.ensemble)</a>
+      <li><a href="api/salad.models.digits.html#salad.models.digits.dirtt.SVHN_MNIST_Model">SVHN_MNIST_Model (class in salad.models.digits.dirtt)</a>
+
+      <ul>
+        <li><a href="api/salad.models.digits.html#salad.models.digits.ensemble.SVHN_MNIST_Model">(class in salad.models.digits.ensemble)</a>
 </li>
+      </ul></li>
       <li><a href="api/salad.models.digits.html#salad.models.digits.assoc.SVHNmodel">SVHNmodel (class in salad.models.digits.assoc)</a>
 
       <ul>
@@ -1412,9 +1460,15 @@
 </li>
       <li><a href="api/salad.solver.da.html#salad.solver.da.dirtt.VADASolver">VADASolver (class in salad.solver.da.dirtt)</a>
 </li>
+      <li><a href="api/salad.layers.html#salad.layers.vat.VATLoss">VATLoss (class in salad.layers.vat)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/salad.layers.html#salad.layers.vat.VATLoss">VATLoss (class in salad.layers.vat)</a>
+      <li><a href="api/salad.datasets.visda.html#salad.datasets.visda.utils.visda_data_loader">visda_data_loader() (in module salad.datasets.visda.utils)</a>
+</li>
+      <li><a href="api/salad.datasets.visda.html#salad.datasets.visda.utils.visda_data_loader_full">visda_data_loader_full() (in module salad.datasets.visda.utils)</a>
+</li>
+      <li><a href="api/salad.datasets.visda.html#salad.datasets.visda.utils.visda_data_loader_pseudo">visda_data_loader_pseudo() (in module salad.datasets.visda.utils)</a>
 </li>
       <li><a href="api/salad.datasets.visda.html#salad.datasets.visda.detection.VisdaDetectionLoader">VisdaDetectionLoader (class in salad.datasets.visda.detection)</a>
 </li>

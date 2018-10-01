@@ -86,6 +86,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../README.html">Package Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../README.html#installation">💻 Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../README.html#using-this-library">📚 Using this library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../README.html#quick-start">Quick Start</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../README.html#reasons-for-using-solver-abstractions">Reasons for using solver abstractions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../README.html#quickstart-mnist-experiment">Quickstart: MNIST Experiment</a></li>
 </ul>
@@ -279,7 +280,7 @@
 <li class="toctree-l4"><a class="reference internal" href="salad.datasets.visda.html#submodules">Submodules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="salad.datasets.visda.html#module-salad.datasets.visda.detection">salad.datasets.visda.detection module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="salad.datasets.visda.html#module-salad.datasets.visda.openset">salad.datasets.visda.openset module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="salad.datasets.visda.html#salad-datasets-visda-utils-module">salad.datasets.visda.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="salad.datasets.visda.html#module-salad.datasets.visda.utils">salad.datasets.visda.utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="salad.datasets.visda.html#module-salad.datasets.visda.visda">salad.datasets.visda.visda module</a></li>
 </ul>
 </li>
@@ -295,7 +296,7 @@
 <li class="toctree-l4"><a class="reference internal" href="salad.models.digits.html#module-salad.models.digits.adv">salad.models.digits.adv module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="salad.models.digits.html#module-salad.models.digits.assoc">salad.models.digits.assoc module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="salad.models.digits.html#module-salad.models.digits.corr">salad.models.digits.corr module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="salad.models.digits.html#salad-models-digits-dirtt-module">salad.models.digits.dirtt module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="salad.models.digits.html#module-salad.models.digits.dirtt">salad.models.digits.dirtt module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="salad.models.digits.html#module-salad.models.digits.ensemble">salad.models.digits.ensemble module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="salad.models.digits.html#salad-models-digits-fan-module">salad.models.digits.fan module</a></li>
 </ul>
@@ -334,7 +335,7 @@
 <li class="toctree-l2"><a class="reference internal" href="salad.utils.html#module-salad.utils.base">salad.utils.base module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="salad.utils.html#module-salad.utils.config">salad.utils.config module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="salad.utils.html#module-salad.utils.evaluate">salad.utils.evaluate module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="salad.utils.html#salad-utils-finetune-module">salad.utils.finetune module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="salad.utils.html#module-salad.utils.finetune">salad.utils.finetune module</a></li>
 </ul>
 </li>
 </ul>
@@ -684,6 +685,19 @@ argumnets are used.</li>
 <em class="property">class </em><code class="descclassname">salad.solver.classification.</code><code class="descname">BaseClassSolver</code><span class="sig-paren">(</span><em>model</em>, <em>dataset</em>, <em>multiclass=True</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#salad.solver.classification.BaseClassSolver" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#salad.solver.base.Solver" title="salad.solver.base.Solver"><code class="xref py py-class docutils literal notranslate"><span class="pre">salad.solver.base.Solver</span></code></a></p>
 <p>Base Solver for classification experiments</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>model</strong> (<em>nn.Module</em>) – A model to train on a classification target</li>
+<li><strong>dataset</strong> (<em>torch.utils.data.Dataset</em>) – The dataset providing training samples</li>
+<li><strong>multiclass</strong> (<em>bool</em>) – If True, <code class="docutils literal notranslate"><span class="pre">CrossEntropyLoss</span></code> is used, <code class="docutils literal notranslate"><span class="pre">BCEWithLogitsLoss</span></code> otherwise.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="class">

@@ -83,8 +83,10 @@
             
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="README.html">Package Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="README.html#benchmarking-results">📊 Benchmarking Results</a></li>
 <li class="toctree-l2"><a class="reference internal" href="README.html#installation">💻 Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="README.html#using-this-library">📚 Using this library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="README.html#quick-start">Quick Start</a></li>
 <li class="toctree-l3"><a class="reference internal" href="README.html#reasons-for-using-solver-abstractions">Reasons for using solver abstractions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="README.html#quickstart-mnist-experiment">Quickstart: MNIST Experiment</a></li>
 </ul>
@@ -278,7 +280,7 @@
 <li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#submodules">Submodules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#module-salad.datasets.visda.detection">salad.datasets.visda.detection module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#module-salad.datasets.visda.openset">salad.datasets.visda.openset module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#salad-datasets-visda-utils-module">salad.datasets.visda.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#module-salad.datasets.visda.utils">salad.datasets.visda.utils module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.datasets.visda.html#module-salad.datasets.visda.visda">salad.datasets.visda.visda module</a></li>
 </ul>
 </li>
@@ -294,7 +296,7 @@
 <li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#module-salad.models.digits.adv">salad.models.digits.adv module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#module-salad.models.digits.assoc">salad.models.digits.assoc module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#module-salad.models.digits.corr">salad.models.digits.corr module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#salad-models-digits-dirtt-module">salad.models.digits.dirtt module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#module-salad.models.digits.dirtt">salad.models.digits.dirtt module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#module-salad.models.digits.ensemble">salad.models.digits.ensemble module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="api/salad.models.digits.html#salad-models-digits-fan-module">salad.models.digits.fan module</a></li>
 </ul>
@@ -333,7 +335,7 @@
 <li class="toctree-l2"><a class="reference internal" href="api/salad.utils.html#module-salad.utils.base">salad.utils.base module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/salad.utils.html#module-salad.utils.config">salad.utils.config module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/salad.utils.html#module-salad.utils.evaluate">salad.utils.evaluate module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/salad.utils.html#salad-utils-finetune-module">salad.utils.finetune module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/salad.utils.html#module-salad.utils.finetune">salad.utils.finetune module</a></li>
 </ul>
 </li>
 </ul>
@@ -404,7 +406,7 @@
 <h1>🥗 salad<a class="headerlink" href="#salad" title="Permalink to this headline">¶</a></h1>
 <p><strong>S</strong>emi-supervised <strong>A</strong>daptive <strong>L</strong>earning <strong>A</strong>cross <strong>D</strong>omains</p>
 <div class="figure">
-<img alt="" src="docs/img/domainshift.png" />
+<img alt="" src="_images/domainshift.png" />
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">salad</span></code> is a library to easily setup experiments using the current
 state-of-the art techniques in domain adaptation. It features several of
@@ -412,6 +414,7 @@ recent approaches, with the goal of being able to run fair comparisons
 between algorithms and transfer them to real-world use cases. The
 toolbox is under active development and will extended when new
 approaches are published.</p>
+<p>Contribute on Github: <a href="#id1"><span class="problematic" id="id2">`https://github.com/domainadaptation/salad`_</span></a></p>
 <p>Currently implements the following techniques (in <code class="docutils literal notranslate"><span class="pre">salad.solver</span></code>)</p>
 <ul class="simple">
 <li>VADA (<code class="docutils literal notranslate"><span class="pre">VADASolver</span></code>),
@@ -446,6 +449,14 @@ Weights</li>
 <a class="reference external" href="https://arxiv.org/abs/1803.10081">arxiv:1803.10081</a></li>
 <li>Translation based approaches</li>
 </ul>
+<div class="section" id="benchmarking-results">
+<h2>📊 Benchmarking Results<a class="headerlink" href="#benchmarking-results" title="Permalink to this headline">¶</a></h2>
+<p>One of salad’s purposes is to constantly track the state of the art of a variety of domain
+adaptation algorithms. The latest results can be reproduced by the files in the <code class="docutils literal notranslate"><span class="pre">scripts/</span></code>
+directory.</p>
+<div class="figure">
+<img alt="" src="_images/benchmarks.svg" /></div>
+</div>
 <div class="section" id="installation">
 <h2>💻 Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Requirements can be found in <code class="docutils literal notranslate"><span class="pre">requirement.txt</span></code> and can be installed
@@ -468,6 +479,63 @@ via</p>
 library comprises code to easily set up deep learning experiments in
 general.</p>
 <p>This section will be extended upon pre-release.</p>
+<div class="section" id="quick-start">
+<h3>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h3>
+<p>To get started, the <code class="docutils literal notranslate"><span class="pre">scripts/</span></code> directory contains several python scripts
+for both running replication studies on digit benchmarks and studies on
+a different dataset (toy example: adaptation to noisy images).</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd scripts
+$ python train_digits.py --log ./log --teach --source svhn --target mnist
+</pre></div>
+</div>
+<p>Refer to the help pages for all options:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">train_digits</span><span class="o">.</span><span class="n">py</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">gpu</span> <span class="n">GPU</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">cpu</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">njobs</span> <span class="n">NJOBS</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">log</span> <span class="n">LOG</span><span class="p">]</span>
+                    <span class="p">[</span><span class="o">--</span><span class="n">epochs</span> <span class="n">EPOCHS</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">checkpoint</span> <span class="n">CHECKPOINT</span><span class="p">]</span>
+                    <span class="p">[</span><span class="o">--</span><span class="n">learningrate</span> <span class="n">LEARNINGRATE</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">dryrun</span><span class="p">]</span>
+                    <span class="p">[</span><span class="o">--</span><span class="n">source</span> <span class="p">{</span><span class="n">mnist</span><span class="p">,</span><span class="n">svhn</span><span class="p">,</span><span class="n">usps</span><span class="p">,</span><span class="n">synth</span><span class="p">,</span><span class="n">synth</span><span class="o">-</span><span class="n">small</span><span class="p">}]</span>
+                    <span class="p">[</span><span class="o">--</span><span class="n">target</span> <span class="p">{</span><span class="n">mnist</span><span class="p">,</span><span class="n">svhn</span><span class="p">,</span><span class="n">usps</span><span class="p">,</span><span class="n">synth</span><span class="p">,</span><span class="n">synth</span><span class="o">-</span><span class="n">small</span><span class="p">}]</span>
+                    <span class="p">[</span><span class="o">--</span><span class="n">sourcebatch</span> <span class="n">SOURCEBATCH</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">targetbatch</span> <span class="n">TARGETBATCH</span><span class="p">]</span>
+                    <span class="p">[</span><span class="o">--</span><span class="n">seed</span> <span class="n">SEED</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="nb">print</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">adv</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">vada</span><span class="p">]</span>
+                    <span class="p">[</span><span class="o">--</span><span class="n">dann</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">assoc</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">coral</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">teach</span><span class="p">]</span>
+
+<span class="n">Domain</span> <span class="n">Adaptation</span> <span class="n">Comparision</span> <span class="ow">and</span> <span class="n">Reproduction</span> <span class="n">Study</span>
+
+<span class="n">optional</span> <span class="n">arguments</span><span class="p">:</span>
+<span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">help</span>            <span class="n">show</span> <span class="n">this</span> <span class="n">help</span> <span class="n">message</span> <span class="ow">and</span> <span class="n">exit</span>
+<span class="o">--</span><span class="n">gpu</span> <span class="n">GPU</span>             <span class="n">Specify</span> <span class="n">GPU</span>
+<span class="o">--</span><span class="n">cpu</span>                 <span class="n">Use</span> <span class="n">CPU</span> <span class="n">Training</span>
+<span class="o">--</span><span class="n">njobs</span> <span class="n">NJOBS</span>         <span class="n">Number</span> <span class="n">of</span> <span class="n">processes</span> <span class="n">per</span> <span class="n">dataloader</span>
+<span class="o">--</span><span class="n">log</span> <span class="n">LOG</span>             <span class="n">Log</span> <span class="n">directory</span><span class="o">.</span> <span class="n">Will</span> <span class="n">be</span> <span class="n">created</span> <span class="k">if</span> <span class="n">non</span><span class="o">-</span><span class="n">existing</span>
+<span class="o">--</span><span class="n">epochs</span> <span class="n">EPOCHS</span>       <span class="n">Number</span> <span class="n">of</span> <span class="n">Epochs</span> <span class="p">(</span><span class="n">Full</span> <span class="n">passes</span> <span class="n">through</span> <span class="n">the</span> <span class="n">unsupervised</span>
+                        <span class="n">training</span> <span class="nb">set</span><span class="p">)</span>
+<span class="o">--</span><span class="n">checkpoint</span> <span class="n">CHECKPOINT</span>
+                        <span class="n">Checkpoint</span> <span class="n">path</span>
+<span class="o">--</span><span class="n">learningrate</span> <span class="n">LEARNINGRATE</span>
+                        <span class="n">Learning</span> <span class="n">rate</span> <span class="k">for</span> <span class="n">Adam</span><span class="o">.</span> <span class="n">Defaults</span> <span class="n">to</span> <span class="n">Karpathy</span><span class="s1">&#39;s</span>
+                        <span class="n">constant</span> <span class="p">;</span><span class="o">-</span><span class="p">)</span>
+<span class="o">--</span><span class="n">dryrun</span>              <span class="n">Perform</span> <span class="n">a</span> <span class="n">test</span> <span class="n">run</span><span class="p">,</span> <span class="n">without</span> <span class="n">actually</span> <span class="n">training</span> <span class="n">a</span>
+                        <span class="n">network</span><span class="o">.</span>
+<span class="o">--</span><span class="n">source</span> <span class="p">{</span><span class="n">mnist</span><span class="p">,</span><span class="n">svhn</span><span class="p">,</span><span class="n">usps</span><span class="p">,</span><span class="n">synth</span><span class="p">,</span><span class="n">synth</span><span class="o">-</span><span class="n">small</span><span class="p">}</span>
+                        <span class="n">Source</span> <span class="n">Dataset</span><span class="o">.</span> <span class="n">Choose</span> <span class="n">mnist</span> <span class="ow">or</span> <span class="n">svhn</span>
+<span class="o">--</span><span class="n">target</span> <span class="p">{</span><span class="n">mnist</span><span class="p">,</span><span class="n">svhn</span><span class="p">,</span><span class="n">usps</span><span class="p">,</span><span class="n">synth</span><span class="p">,</span><span class="n">synth</span><span class="o">-</span><span class="n">small</span><span class="p">}</span>
+                        <span class="n">Target</span> <span class="n">Dataset</span><span class="o">.</span> <span class="n">Choose</span> <span class="n">mnist</span> <span class="ow">or</span> <span class="n">svhn</span>
+<span class="o">--</span><span class="n">sourcebatch</span> <span class="n">SOURCEBATCH</span>
+                        <span class="n">Batch</span> <span class="n">size</span> <span class="n">of</span> <span class="n">Source</span>
+<span class="o">--</span><span class="n">targetbatch</span> <span class="n">TARGETBATCH</span>
+                        <span class="n">Batch</span> <span class="n">size</span> <span class="n">of</span> <span class="n">Target</span>
+<span class="o">--</span><span class="n">seed</span> <span class="n">SEED</span>           <span class="n">Random</span> <span class="n">Seed</span>
+<span class="o">--</span><span class="nb">print</span>
+<span class="o">--</span><span class="n">null</span>
+<span class="o">--</span><span class="n">adv</span>                 <span class="n">Train</span> <span class="n">a</span> <span class="n">model</span> <span class="k">with</span> <span class="n">Adversarial</span> <span class="n">Domain</span> <span class="n">Regularization</span>
+<span class="o">--</span><span class="n">vada</span>                <span class="n">Train</span> <span class="n">a</span> <span class="n">model</span> <span class="k">with</span> <span class="n">Virtual</span> <span class="n">Adversarial</span> <span class="n">Domain</span>
+                        <span class="n">Adaptation</span>
+<span class="o">--</span><span class="n">dann</span>                <span class="n">Train</span> <span class="n">a</span> <span class="n">model</span> <span class="k">with</span> <span class="n">Domain</span> <span class="n">Adversarial</span> <span class="n">Training</span>
+<span class="o">--</span><span class="n">assoc</span>               <span class="n">Train</span> <span class="n">a</span> <span class="n">model</span> <span class="k">with</span> <span class="n">Associative</span> <span class="n">Domain</span> <span class="n">Adaptation</span>
+<span class="o">--</span><span class="n">coral</span>               <span class="n">Train</span> <span class="n">a</span> <span class="n">model</span> <span class="k">with</span> <span class="n">Deep</span> <span class="n">Correlation</span> <span class="n">Alignment</span>
+<span class="o">--</span><span class="n">teach</span>               <span class="n">Train</span> <span class="n">a</span> <span class="n">model</span> <span class="k">with</span> <span class="n">Self</span><span class="o">-</span><span class="n">Ensembling</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="reasons-for-using-solver-abstractions">
 <h3>Reasons for using solver abstractions<a class="headerlink" href="#reasons-for-using-solver-abstractions" title="Permalink to this headline">¶</a></h3>
 <p>The chosen abstraction style organizes experiments into a subclass of
