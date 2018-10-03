@@ -414,25 +414,54 @@ recent approaches, with the goal of being able to run fair comparisons
 between algorithms and transfer them to real-world use cases. The
 toolbox is under active development and will extended when new
 approaches are published.</p>
-<p>Contribute on Github: <a href="#id1"><span class="problematic" id="id2">`https://github.com/domainadaptation/salad`_</span></a></p>
+<p>Contribute and explore the code on <a class="reference external" href="https://github.com/domainadaptation/salad">Github</a></p>
 <p>Currently implements the following techniques (in <code class="docutils literal notranslate"><span class="pre">salad.solver</span></code>)</p>
-<ul class="simple">
-<li>VADA (<code class="docutils literal notranslate"><span class="pre">VADASolver</span></code>),
-<a class="reference external" href="https://arxiv.org/abs/1802.08735">arxiv:1802.08735</a></li>
-<li>DIRT-T (<code class="docutils literal notranslate"><span class="pre">DIRTTSolver</span></code>),
-<a class="reference external" href="https://arxiv.org/abs/1802.08735">arxiv:1802.08735</a></li>
-<li>Self-Ensembling for Visual Domain Adaptation
+<ul>
+<li><p class="first">VADA (<code class="docutils literal notranslate"><span class="pre">VADASolver</span></code>),
+<a class="reference external" href="https://arxiv.org/abs/1802.08735">arxiv:1802.08735</a></p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ python scripts/train_digits.py --source svhn --target mnist  --vada
+</pre></div>
+</div>
+</li>
+<li><p class="first">Domain Adversarial Training (<code class="docutils literal notranslate"><span class="pre">DANNSolver</span></code>),
+<a class="reference external" href="http://jmlr.org/papers/v17/15-239.html">jmlr:v17/15-239.html</a></p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ python scripts/train_digits.py --source svhn --target mnist  --dann
+</pre></div>
+</div>
+</li>
+<li><p class="first">Associative Domain Adaptation (<code class="docutils literal notranslate"><span class="pre">AssociativeSolver</span></code>),
+<a class="reference external" href="https://arxiv.org/pdf/1708.00938.pdf">arxiv:1708.00938</a></p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ python scripts/train_digits.py --source svhn --target mnist  --assoc
+</pre></div>
+</div>
+</li>
+<li><p class="first">Deep Correlation Alignment</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ python scripts/train_digits.py --source svhn --target mnist  --coral
+</pre></div>
+</div>
+</li>
+<li><p class="first">Self-Ensembling for Visual Domain Adaptation
 (<code class="docutils literal notranslate"><span class="pre">SelfEnsemblingSolver</span></code>)
-<a class="reference external" href="https://arxiv.org/abs/1706.05208">arxiv:1706.05208</a></li>
-<li>Associative Domain Adaptation (<code class="docutils literal notranslate"><span class="pre">AssociativeSolver</span></code>),
-<a class="reference external" href="https://arxiv.org/pdf/1708.00938.pdf">arxiv:1708.00938</a></li>
-<li>Domain Adversarial Training (<code class="docutils literal notranslate"><span class="pre">DANNSolver</span></code>),
-<a class="reference external" href="http://jmlr.org/papers/v17/15-239.html">jmlr:v17/15-239.html</a></li>
+<a class="reference external" href="https://arxiv.org/abs/1706.05208">arxiv:1706.05208</a></p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ python scripts/train_digits.py --source svhn --target mnist    --teach
+</pre></div>
+</div>
+</li>
+<li><p class="first">Adversarial Dropout Regularization (<code class="docutils literal notranslate"><span class="pre">AdversarialDropoutSolver</span></code>),
+<a class="reference external" href="https://arxiv.org/abs/1711.01575">arxiv.org:1711.01575</a></p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ python scripts/train_digits.py --source svhn --target mnist  --adv
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Examples (already refer to the <code class="docutils literal notranslate"><span class="pre">examples/</span></code> subfolder) soon to be added for:</p>
+<ul class="simple">
 <li>Generalizing Across Domains via Cross-Gradient Training
 (<code class="docutils literal notranslate"><span class="pre">CrossGradSolver</span></code>),
-<a class="reference external" href="http://arxiv.org/abs/1804.10745">arxiv:1708.00938</a></li>
-<li>Adversarial Dropout Regularization (<code class="docutils literal notranslate"><span class="pre">AdversarialDropoutSolver</span></code>),
-<a class="reference external" href="https://arxiv.org/abs/1711.01575">arxiv.org:1711.01575</a></li>
+<a class="reference external" href="http://arxiv.org/abs/1804.10745">arxiv:1708.00938</a>
+Example coming soon!</li>
+<li>DIRT-T (<code class="docutils literal notranslate"><span class="pre">DIRTTSolver</span></code>),
+<a class="reference external" href="https://arxiv.org/abs/1802.08735">arxiv:1802.08735</a></li>
 </ul>
 <p>Implements the following features (in <code class="docutils literal notranslate"><span class="pre">salad.layers</span></code>):</p>
 <ul class="simple">
